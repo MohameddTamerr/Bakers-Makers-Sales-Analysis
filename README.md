@@ -1,68 +1,149 @@
-# 🍞 Bakers & Makers - Sales & Forecasting Dashboard
+# Bakers & Makers Sales Analysis
 
-**Bakers & Makers** is a business intelligence dashboard built with **Power BI Desktop** to visualize, analyze, and forecast sales performance of a bakery business across its core product categories: Bread, Cookies, and Pastries.
+A Power BI sales analysis and forecasting project developed for **Bakers & Makers**.
 
-## 📊 Project Overview
+This project is especially meaningful to me because it was **my first freelance project**. It gave me the opportunity to work with a real business-oriented problem, transform raw data into useful insights, and present the results through an interactive Power BI dashboard and a professional analysis report.
 
-This dashboard provides comprehensive insights into:
+![Dashboard Overview](images/bakers_makers_dashboard_overview.png)
 
-- 📅 **Daily Sales Trends**: Revenue breakdown by day and time of day
-- 📈 **Sales Forecasting**: Predictive analytics on future sales and returns
-- 🥖 **Product Performance**: Total sold and returned items per category
-- 💰 **Revenue Analysis**: Aggregated and comparative view of revenue by day, time, and product
-- 🔄 **Returns Tracking**: Return forecasts to help manage inventory and reduce waste
+## Project Overview
 
-## 📂 Pages Included
+The goal of this project was to analyze bakery sales performance and answer practical business questions related to:
 
-- **Intro Page**: High-level summary of sales and returns
-- **Forecast Page**: Forecasted trends for sales and returns by product and date
+- Revenue performance across different days and times
+- Product sales performance
+- Weekend sales behavior
+- Future sales trends
+- Zero-revenue transactions and potential product returns
+- Opportunities to improve marketing and business decisions
 
-## 🔍 Key Metrics
+The analysis focuses on three main product categories:
 
-| Metric                  | Value      |
-|------------------------|------------|
-| Total Sold Bread       | 1,538      |
-| Total Sold Cookies     | 1,742      |
-| Total Sold Pastry      | 1,630      |
-| Total Returned Bread   | 1,596      |
-| Total Returned Pastry  | 1,635      |
-| Total Revenue          | 363.3K     |
+- Bread
+- Pastry
+- Cookies
 
-## 📆 Time-Based Insights
+## Business Questions
 
-The dashboard breaks down performance by:
-- **Day of the Week** (Monday to Sunday)
-- **Time of Day** (Morning, Afternoon, Evening, Night)
-- **Month** (for forecast trends)
+The project was designed around three main questions:
 
-## 🔮 Forecasting Models
+1. When do weekends generate the most revenue?
+2. Which products should be prioritized for Saturday sales?
+3. What patterns can be identified in zero-revenue transactions?
 
-The Power BI forecast visuals project:
-- Sales volume for each product up to **July 2024**
-- Expected return rates
-- Time-series trends for optimized inventory and marketing
+## Key Insights
 
-## 🛠️ Tools Used
+The analysis revealed several useful business insights:
 
-- **Power BI Desktop**
-- **DAX for calculated metrics**
-- **Time Intelligence & Forecast Visuals**
+- **Saturday Night** was the strongest revenue period during the weekend.
+- **Cookies** achieved the highest sales volume among the analyzed products.
+- **Pastry** showed a relatively high rate of zero-revenue transactions.
+- New customers generated more zero-revenue transactions than returning customers.
+- Higher advertising spend did not always result in higher revenue.
+- Some late-night periods showed weaker performance for Bread and Pastry.
 
-## 📌 Getting Started
+## Dashboard
 
-To explore the dashboard:
+The Power BI dashboard provides an interactive overview of revenue, product performance, and time-based sales patterns.
 
-1. Open the `.pbix` file in **Power BI Desktop**
-2. Navigate between pages: `Intro Page` and `Forecast Page`
-3. Interact with visuals to filter by time and product
+### Sales Overview
 
-## 📬 Feedback & Contributions
+![Sales Dashboard](images/bakers_makers_dashboard_overview.png)
 
-Feel free to:
-- Fork this repo and suggest improvements
-- Use the visual layout and forecasting logic for your own retail data
-- Report issues or ideas via GitHub Issues
+The overview page includes:
 
----
+- Total revenue
+- Units sold by product
+- Zero-revenue transaction indicators
+- Revenue by day
+- Revenue by time of day
+- Weekend performance analysis
+- Interactive day filtering
 
-**Author**: Mohamed Tamer  
+### Sales Forecasting
+
+![Sales Forecast](images/bakers_makers_sales_forecast.png)
+
+The forecasting page explores future sales patterns for Bread, Pastry, and Cookies using Power BI forecasting visuals.
+
+It also compares historical trends across the different product categories to support inventory and marketing decisions.
+
+## Business Recommendations
+
+Based on the analysis, the following actions were recommended:
+
+- Focus promotions and advertising on high-performing periods, particularly Saturday Night.
+- Review Pastry quality, freshness, and inventory management due to its zero-revenue transaction patterns.
+- Prioritize high-performing products such as Cookies during strong conversion periods.
+- Review advertising campaigns with high spend but low revenue.
+- Collect explicit return-reason data to improve future return analysis.
+- Track inventory levels more closely to distinguish returns from stock-related or zero-sale events.
+
+## Data Limitation
+
+The original dataset does not contain an explicit **Return Reason** field.
+
+Therefore, transactions with zero revenue were used as a **proxy indicator** when investigating possible returns. These observations should not be interpreted as confirmed product returns.
+
+This limitation was considered when interpreting the results and making recommendations.
+
+## Tools & Skills
+
+| Tool / Skill | Usage |
+|---|---|
+| Power BI Desktop | Dashboard development and analysis |
+| Power Query | Data preparation and transformation |
+| DAX | Measures and calculated metrics |
+| Data Visualization | Interactive charts and KPI reporting |
+| Time Intelligence | Time-based performance analysis |
+| Forecasting | Exploration of future sales trends |
+| Business Analysis | Insights and actionable recommendations |
+
+## Repository Structure
+
+```text
+Bakers-Makers-Sales-Analysis/
+│
+├── dashboard/
+│   └── bakers_makers_dashboard.pbix
+│
+├── data/
+│   └── bakers_makers_sales_data.xlsx
+│
+├── images/
+│   ├── bakers_makers_dashboard_overview.png
+│   └── bakers_makers_sales_forecast.png
+│
+├── report/
+│   └── Bakers_Makers_Sales_Analysis.pdf
+│
+└── README.md
+```
+
+## How to Explore the Project
+
+1. Download the `.pbix` file from the `dashboard` folder.
+2. Open it using Power BI Desktop.
+3. Use the dashboard filters to explore sales performance by day and time.
+4. Navigate to the forecasting page to examine product trends.
+5. Read the full analysis report in the `report` folder for detailed findings and recommendations.
+
+## What I Learned
+
+As my **first freelance project**, this experience helped me move beyond simply creating charts and focus on solving business problems with data.
+
+I gained practical experience in:
+
+- Translating business questions into analytical tasks
+- Preparing and validating business data
+- Designing an interactive Power BI dashboard
+- Creating DAX measures and KPIs
+- Identifying patterns and communicating insights
+- Recognizing data limitations instead of making unsupported conclusions
+- Turning analytical findings into practical business recommendations
+
+## Author
+
+**Mohamed Tamer**
+
+Data Analysis | Power BI | Data Visualization
